@@ -16,7 +16,7 @@ env:
 jobs:
   publish:
     runs-on: ubuntu-latest
-    if: github.repository == 'square/okhttp' && github.ref == 'refs/heads/master'
+    if: github.repository == 'qqqiver-dot/ApolloPlugin' && github.ref == 'refs/heads/master'
 
     steps:
       - name: Checkout
@@ -119,7 +119,7 @@ jobs:
         run: ./gradlew test -Dtest.java.version=11
 
       - name: Publish Test Report
-        if: github.repository == 'square/okhttp' && github.ref == 'refs/heads/master'
+        if: github.repository == 'qqqiver-dot/ApolloPlugin' && github.ref == 'refs/heads/master'
         uses: mikepenz/action-junit-report@v5
         with:
           report_paths: '**/build/test-results/*/TEST-*.xml'
@@ -127,7 +127,7 @@ jobs:
 
       - name: Publish Test Results
         uses: EnricoMi/publish-unit-test-result-action@v2
-        if: github.repository == 'square/okhttp' && github.ref == 'refs/heads/master'
+        if: github.repository == 'qqqiver-dot/ApolloPlugin' && github.ref == 'refs/heads/master'
         with:
           files: |
             **/build/test-results/*/TEST-*.xml
@@ -212,7 +212,7 @@ jobs:
         uses: gradle/actions/setup-gradle@v5
 
       - name: Run Checks
-        run: ./gradlew okhttp:test -Dtest.java.version=8 -Dokhttp.platform=jdk8alpn -Dalpn.boot.version=8.1.13.v20181017 -Dorg.gradle.java.installations.paths=/opt/hostedtoolcache/Java_Adopt_jdk/8.0.242-8.1/x64
+        run: ./gradlew -Dtest.java.version=8 -Dokhttp.platform=jdk8alpn -Dalpn.boot.version=8.1.13.v20181017 -Dorg.gradle.java.installations.paths=/opt/hostedtoolcache/Java_Adopt_jdk/8.0.242-8.1/x64
 
   testopenjsse:
     runs-on: ubuntu-latest
