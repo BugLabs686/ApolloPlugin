@@ -1,3 +1,7 @@
+[![license](http://img.shields.io/badge/license-Apache2.0-brightgreen.svg?style=flat)](https://github.com/qqqiver-dot/ApolloPlugin/blob/dev/LICENSE)
+
+[![Release Version](https://img.shields.io/badge/release-1.0.0-brightgreen.svg)](https://github.com/qqqiver-dot/ApolloPlugin/releases)
+
 ## Sample Project
 We provide complete sample projects to help you get started quickly:
 - [Sample Code](https://github.com/your-org/apollo-plugin/tree/master/apollo-sample)
@@ -7,7 +11,7 @@ We provide complete sample projects to help you get started quickly:
 ## Core Architecture
 
 <p align="center">
-  <a href="https://github.com/your-org/apolloplugin/wiki">
+  <a href="https://dgithub.xyz/your-org/apolloplugin/wiki">
     <img alt="ApolloPlugin Architecture" src="https://your-domain.com/path/to/apollo-architecture.png" height="500" />
   </a>
 </p>
